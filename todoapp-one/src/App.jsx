@@ -1,16 +1,22 @@
+import AppName from "./components/AppName";
+import AddTodo from "./components/AddTodo";
+import TodoItem1 from "./components/TodoItem1";
+import TodoItem2 from "./components/TodoItem2";
+import "./App.css";
+
 function App() {
-  return (
-    <center class="todo-container">
-      <h1>Todo App</h1>
-      <div class="container text-center">
-        <div class="row align-items-start">
-          <div class="col">One of three columns</div>
-          <div class="col">One of three columns</div>
-          <div class="col">One of three columns</div>
+    return (
+        <div className="todo-container">
+            <AppName></AppName>
+            <AddTodo></AddTodo>
+            <div>
+              <TodoItem1></TodoItem1>
+              <TodoItem2></TodoItem2>
+            </div>
+
+            <div className="container"></div>
         </div>
-      </div>
-    </center>
-  );
+    );
 }
 
 export default App;
